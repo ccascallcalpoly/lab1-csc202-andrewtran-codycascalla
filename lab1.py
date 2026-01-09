@@ -21,7 +21,7 @@ class PriceRecord:
     price: Cents
 #* 4) 
 @dataclass(frozen = True)
-class MusicalNotes:
+class MusicalNote:
     pitch: float
     duration: float 
 
@@ -34,8 +34,8 @@ class MusicalNotes:
 def celsius_to_fahrenheit(cel: Celsius) -> Fahrenheit:
     return (cel * 9/5) + 32
 #* 2) 
-def up_one_octave(musicNote: MusicalNotes) -> MusicalNotes:
-    return MusicalNotes(musicNote.pitch * 2, musicNote.duration)
+def up_one_octave(musicNote: MusicalNote) -> MusicalNote:
+    return MusicalNote(musicNote.pitch * 2, musicNote.duration)
 
 #* 3) 
 def second_largest(a: int, b: int, c: int) -> int:
