@@ -8,7 +8,7 @@ sys.setrecursionlimit(10**6)
 #   yo what's good it's andrewfsdf
 #   its me cody
 #* Data Definitions 
- #fqfqwfqwfqwcwfwqf
+#*  okay
 #* 1)
 Celsius: TypeAlias = float
 Fahrenheit: TypeAlias = float
@@ -21,7 +21,7 @@ class PriceRecord:
     price: Cents
 #* 4) 
 @dataclass(frozen = True)
-class MusicalNote:
+class MusicalNotes:
     pitch: float
     duration: float 
 
@@ -34,8 +34,8 @@ class MusicalNote:
 def celsius_to_fahrenheit(cel: Celsius) -> Fahrenheit:
     return (cel * 9/5) + 32
 #* 2) 
-def up_one_octave(musicNote: MusicalNote) -> MusicalNote:
-    return MusicalNote(musicNote.pitch * 2, musicNote.duration)
+def up_one_octave(musicNote: MusicalNotes) -> MusicalNotes:
+    return MusicalNotes(musicNote.pitch * 2, musicNote.duration)
 
 #* 3) 
 def second_largest(a: int, b: int, c: int) -> int:
